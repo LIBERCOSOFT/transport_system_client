@@ -46,7 +46,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo Link](https://unique-sunshine-4e6485.netlify.app)
+[Live Demo Link](https://transportation-queue-system.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
