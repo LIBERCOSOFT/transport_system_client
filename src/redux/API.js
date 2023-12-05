@@ -1,2 +1,3 @@
-export const deliveryApi = 'http://localhost:5050/api/delivery';
-export const plannerApi = 'http://localhost:5050/api/planner';
+const baseAPI = 'https://transport-system-backedn.onrender.com';
+export const deliveryApi = `${baseAPI}/api/delivery`;
+export const plannerApi = `${baseAPI}/api/planner`;

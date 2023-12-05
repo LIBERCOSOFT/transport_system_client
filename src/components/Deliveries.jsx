@@ -1,14 +1,13 @@
-/* eslint-disable react/prop-types */
-import Button from '@mui/material/Button';
-import DeleteIcon from '@mui/icons-material/Delete';
-
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   getAllDeliveries,
   removeDelivery,
 } from '../redux/Deliveries/deliveries';
+import PropTypes from 'prop-types';
 
+import Button from '@mui/material/Button';
+import DeleteIcon from '@mui/icons-material/Delete';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -59,7 +58,7 @@ const Deliveries = ({ handleDragStart, handleDragOver }) => {
                 key={index}
                 id={index}
                 draggable
-                onDragStart={(e) => handleDragStart(e, index)}
+                onDragStart={() => handleDragStart(index)}
                 onDragOver={handleDragOver}
                 className="deliveries__row"
               >
@@ -86,6 +85,11 @@ const Deliveries = ({ handleDragStart, handleDragOver }) => {
       </TableContainer>
     </div>
   );
+};
+
+Deliveries.propTypes = {
+  handleDragStart: PropTypes.func.isRequired,
+  handleDragOver: PropTypes.func.isRequired,
 };
 
 export default Deliveries;

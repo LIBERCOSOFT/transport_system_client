@@ -9,14 +9,12 @@ import Planner from './components/Planner';
 import './App.css';
 
 function App() {
-  const deliveries = useSelector((state) => state.deliveries);
-  // Drag functionality
   const [draggedIndex, setDraggedIndex] = useState(null);
+  const deliveries = useSelector((state) => state.deliveries);
 
   const dispatch = useDispatch();
 
-  const handleDragStart = (e, index) => {
-    e.dataTransfer.setData('text/plain', ''); // Required for Firefox
+  const handleDragStart = (index) => {
     setDraggedIndex(index);
   };
 

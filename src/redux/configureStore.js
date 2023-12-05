@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import { configureStore } from '@reduxjs/toolkit';
 import { combineReducers } from 'redux';
 import plannerReducer from './Planner/planner';

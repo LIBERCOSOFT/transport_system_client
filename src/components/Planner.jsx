@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getAllSlots, removeSlot } from '../redux/Planner/planner';
 import { addNewDelivery } from '../redux/Deliveries/deliveries';
+import PropTypes from 'prop-types';
 
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -143,6 +143,11 @@ const Planner = ({ handleDragOver, handleDrop }) => {
       </TableContainer>
     </div>
   );
+};
+
+Planner.propTypes = {
+  handleDragOver: PropTypes.func.isRequired,
+  handleDrop: PropTypes.func.isRequired,
 };
 
 export default Planner;

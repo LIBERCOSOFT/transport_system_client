@@ -9,7 +9,6 @@
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Install \& Setup](#install--setup)
-    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -47,7 +46,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo Link](https://budget-app-production-3559.up.railway.app/)
+[Live Demo Link](https://unique-sunshine-4e6485.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,22 +77,24 @@ To setup and install this sample ROR Blog project, follow the below steps:
 - Clone this project by the command: 
 
 ```
-$ git clone https://github.com/LIBERCOSOFT/budget-app.git
+$ git clone https://github.com/LIBERCOSOFT/transport_system_client.git
 ```
 
-- Then switch to the project folder by the bellow query:
+- Then switch to the project folder by the below query:
 
 ```
-$ cd blog-app
+$ cd transport_system_client
 ```
 
-- Install npm dependencies with `npm install`
+- Install npm dependencies with the command below:
+```
+$ npm install
+```
 
-
-
-### Deployment
-
-N/A
+- Start the Vite development server with the command below:
+```
+$ npm run dev
+```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -111,8 +112,8 @@ N/A
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **Implement API Endpoints**
-- [ ] **Integrate Payment Options**
+- [ ] **Implement a more responsive UI**
+- [ ] **Implement the drag and drop for mobile**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
